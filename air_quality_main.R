@@ -1,8 +1,9 @@
 library(tidyverse)
 
 airquality %>% 
-  ggplot(aes(Wind, Solar.R))+
-  geom_point(color = airquality$Month)
+  ggplot(aes(Ozone, Wind))+
+  geom_point()+
+  geom_smooth(method="lm")
   
 
 
